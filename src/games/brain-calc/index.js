@@ -1,20 +1,19 @@
 
 
-import {hello, getUserAnswer, makeGame} from '../common/index.js';
+import { getUserAnswer, makeGame } from '../common/index.js';
 
-
-export const getSigns = () => {
+const getSigns = () => {
     const signs = '+-*'
     const curChar = Math.floor(Math.random() * signs.length)
     return signs[curChar]
   }
 
-  export const getNumber = () => {
+const getNumber = () => {
     const number = Math.floor(Math.random() * 101);
     return number;
   };
 
-export const getExpression = () => {
+const getExpression = () => {
     const number1 = getNumber();
     const number2 = getNumber();
     const sign = getSigns();
@@ -29,7 +28,7 @@ export const getExpression = () => {
      
 };
 
-export const makeIteration = () => (name) => {
+const makeIteration = () => (name) => {
     const correctResultExpression = getExpression();
     const currentAnswer = parseInt(getUserAnswer());
 

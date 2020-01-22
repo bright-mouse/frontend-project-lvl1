@@ -1,13 +1,13 @@
 import { getUserAnswer, makeGame} from '../common/index.js';
 
-export const getNumber = () => {
+const getNumber = () => {
     const number = Math.floor(Math.random() * 101);
     console.log(`Question: ${number}`);
     return number;
 };
 
 
-export const convertNumberToAnswer = (number) => {
+const convertNumberToAnswer = (number) => {
    if (number % 2 === 0) {
        return 'yes';
    } else {
@@ -15,7 +15,7 @@ export const convertNumberToAnswer = (number) => {
    };
 };
 
-export const makeIteration = () => (name) => {
+const makeIteration = () => (name) => {
    const currentNumber = getNumber();
    const currentAnswer = getUserAnswer();
    const correctResult = convertNumberToAnswer(currentNumber);
