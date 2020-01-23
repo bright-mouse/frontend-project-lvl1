@@ -1,8 +1,8 @@
 import { getUserAnswer, makeGame} from '../common/index.js';
 
  const getNumber = () => {
-    const number1 = Math.floor(Math.random() * 101);
-    const number2 = Math.floor(Math.random() * 101);
+    const number1 = Math.floor(Math.random() * 99) + 1;
+    const number2 = Math.floor(Math.random() * 99) + 1;
     console.log(`Question: ${number1}  ${number2}`);
     const gcd = getGcd(number1, number2)
     return gcd;

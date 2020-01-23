@@ -9,7 +9,7 @@ const getSigns = () => {
   }
 
 const getNumber = () => {
-    const number = Math.floor(Math.random() * 101);
+    const number = Math.floor(Math.random() * 99) + 1;
     return number;
   };
 

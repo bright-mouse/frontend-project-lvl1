@@ -1,7 +1,7 @@
 import { getUserAnswer, makeGame} from '../common/index.js';
 
 const getNumber = () => {
-    const number = Math.floor(Math.random() * 101);
+    const number = Math.floor(Math.random() * 99) + 1;
     console.log(`Question: ${number}`);
     return number;
 };
