@@ -1,6 +1,6 @@
 import { getUserAnswer, makeGame } from '../common';
 
-const getSigns = () => {
+const getSign = () => {
   const signs = '+-*';
   const curChar = Math.floor(Math.random() * signs.length);
   return signs[curChar];
@@ -14,7 +14,7 @@ const getNumber = () => {
 const getExpression = () => {
   const number1 = getNumber();
   const number2 = getNumber();
-  const sign = getSigns();
+  const sign = getSign();
   console.log(`Question: ${number1} ${sign} ${number2}`);
   if (sign === '+') {
     return number1 + number2;
@@ -39,7 +39,8 @@ const makeIteration = () => (name) => {
 
 const startBrainCalc = () => {
   const iteration = makeIteration();
-  makeGame(iteration);
+  const task = 'What is the result of the expression?';
+  makeGame(iteration, task);
 };
 
 export default startBrainCalc;

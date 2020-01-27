@@ -33,7 +33,8 @@ const makeIteration = () => (name) => {
 
 const startBrainPrime = () => {
   const iteration = makeIteration();
-  makeGame(iteration);
+  const task = 'Answer "yes" if the number is prime, otherwise answer "no".';
+  makeGame(iteration, task);
 };
 
 export default startBrainPrime;

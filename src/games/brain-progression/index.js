@@ -30,7 +30,8 @@ const makeIteration = () => (name) => {
 
 const startBrainProgression = () => {
   const iteration = makeIteration();
-  makeGame(iteration);
+  const task = 'What number is missing in the progression?';
+  makeGame(iteration, task);
 };
 
 export default startBrainProgression;

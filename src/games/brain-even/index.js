@@ -28,7 +28,8 @@ const makeIteration = () => (name) => {
 
 const startBrainEven = () => {
   const iteration = makeIteration();
-  makeGame(iteration);
+  const task = 'Answer "yes" if the number is even, otherwise answer "no".';
+  makeGame(iteration, task);
 };
 
 export default startBrainEven;

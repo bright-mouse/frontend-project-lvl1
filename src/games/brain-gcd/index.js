@@ -28,7 +28,8 @@ const makeIteration = () => (name) => {
 
 const startBrainGcd = () => {
   const iteration = makeIteration();
-  makeGame(iteration);
+  const task = 'Find the greatest common divisor of given numbers.';
+  makeGame(iteration, task);
 };
 
 export default startBrainGcd;
