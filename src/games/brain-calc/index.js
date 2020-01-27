@@ -28,7 +28,6 @@ const getExpression = () => {
 const makeIteration = () => (name) => {
   const correctResultExpression = getExpression();
   const currentAnswer = parseInt(getUserAnswer(), 10);
-
   if (currentAnswer === correctResultExpression) {
     console.log('Correct!');
     return true;
