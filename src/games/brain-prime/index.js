@@ -11,7 +11,7 @@ const convertNumberToAnswer = (number) => {
   if (number < 2) {
     return 'no';
   }
-  for (let counter = 2; counter < Math.sqrt(number); counter += 1) {
+  for (let counter = 2; counter <= Math.sqrt(number); counter += 1) {
     if (number % counter === 0) {
       return 'no';
     }
